@@ -260,6 +260,7 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>
+				AACbPg==
 				</data>
 			</dict>
 		</dict>
@@ -333,13 +334,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>IntelMausi.kext</string>
+				<string>AtherosE2200Ethernet.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/IntelMausi</string>
+				<string>Contents/MacOS/AtherosE2200Ethernet</string>
 				<key>MatchKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -347,15 +348,99 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>Legacy_USB3.kext</string>
+				<string>VoodooPS2Controller.kext</string>
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MatchKernel</key>
+				<string>Contents/MacOS/VoodooPS2Controller</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>VoodooPS2Keyboard.kext</string>
+				<key>Comment</key>
 				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MatchKernel</key>
+				<string>Contents/MacOS/VoodooPS2Keyboard</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>VoodooPS2Trackpad.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MatchKernel</key>
+				<string>Contents/MacOS/VoodooPS2Trackpad</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>SMCBatteryManager.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MatchKernel</key>
+				<string>Contents/MacOS/SMCBatteryManager</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>SMCProcessor.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MatchKernel</key>
+				<string>Contents/MacOS/SMCProcessor</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>SMCSuperIO.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MatchKernel</key>
+				<string>Contents/MacOS/SMCSuperIO</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>SMCLightSensor.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MatchKernel</key>
+				<string>Contents/MacOS/SMCLightSensor</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -499,9 +584,9 @@
 			<key>PanicNoKextDump</key>
 			<false/>
 			<key>ThirdPartyTrim</key>
-			<false/>
+			<true/>
 			<key>XhciPortLimit</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -509,17 +594,17 @@
 		<key>Boot</key>
 		<dict>
 			<key>ConsoleBehaviourOs</key>
-			<string></string>
+			<string>Graphics</string>
 			<key>ConsoleBehaviourUi</key>
-			<string></string>
+			<string>Text</string>
 			<key>ConsoleMode</key>
-			<string></string>
+			<string>Max</string>
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideSelf</key>
 			<true/>
 			<key>Resolution</key>
-			<string></string>
+			<string>1920x1080</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
@@ -589,10 +674,10 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v keepsyms=1</string>
+				<string>-v alcid=56 keepsyms=1 -disablegfxfirmware</string>
 				<key>csr-active-config</key>
 				<data>
-				AAAAAA==
+				ZwAAAA==
 				</data>
 				<key>nvda_drv</key>
 				<data>
@@ -646,7 +731,7 @@
 	<key>PlatformInfo</key>
 	<dict>
 		<key>Automatic</key>
-		<false/>
+		<true/>
 		<key>DataHub</key>
 		<dict>
 			<key>ARTFrequency</key>
@@ -689,19 +774,19 @@
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>M000000000001</string>
+			<string>C02838501J9JH4RJA</string>
 			<key>ROM</key>
 			<data>
-			ESIzAAAA
+			VL9kVFPj
 			</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>MacPro5,1</string>
+			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>W0000000001</string>
+			<string>C02XF0NYJHCC</string>
 			<key>SystemUUID</key>
-			<string>00000000-0000-0000-0000-000000000000</string>
+			<string>E9623A2E-E536-4893-98FA-5B1B8EA1B94A</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -802,7 +887,7 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>HFSPlus.efi</string>
+			<string>HFSPlus-64.efi</string>
 			<string>ApfsDriverLoader.efi</string>
 			<string>AppleUiSupport.efi</string>
 			<string>AptioInputFix.efi</string>
