@@ -14,16 +14,14 @@
 			<dict>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
-				<key>FixHDA</key>
-				<true/>
 				<key>FixHPET</key>
-				<false/>
+				<true/>
 				<key>FixIPIC</key>
-				<false/>
+				<true/>
 				<key>FixRTC</key>
-				<false/>
+				<true/>
 				<key>FixTMR</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>Patches</key>
 			<array>
@@ -242,13 +240,9 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 -disablegfxfirmware -cdfon -igfxnohdmi brcmfx-driver=2 brcmfx-country=#a</string>
+		<string>dart=0 nv_disable=1 -disablegfxfirmware keepsyms=1 abm_firstpolldelay=16000 brcmfx-driver=2 brcmfx-country=#a</string>
 		<key>DefaultVolume</key>
 		<string>MacOS</string>
-		<key>Legacy</key>
-		<string>PBR</string>
-		<key>NeverDoRecovery</key>
-		<true/>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -256,8 +250,6 @@
 		<key>Timeout</key>
 		<integer>5</integer>
 	</dict>
-	<key>Comment</key>
-	<string>This file is for 10.14.x with native CoffeeLake support</string>
 	<key>Devices</key>
 	<dict>
 		<key>Audio</key>
@@ -265,15 +257,6 @@
 			<key>ResetHDA</key>
 			<false/>
 		</dict>
-		<key>FakeID</key>
-		<dict>
-			<key>#IntelGFX</key>
-			<string>0x59168086</string>
-			<key>#Kaby Lake-Comment</key>
-			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
-		</dict>
-		<key>Inject</key>
-		<false/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1d,0x6)/Pci(0x0,0x0)</key>
@@ -308,10 +291,6 @@
 				<data>
 				mz4AAA==
 				</data>
-				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
 				<key>framebuffer-con0-enable</key>
 				<data>
 				AQAAAA==
@@ -330,7 +309,7 @@
 				</data>
 				<key>framebuffer-con1-pipe</key>
 				<data>
-				EgAAAA==
+				EwAAAA==
 				</data>
 				<key>framebuffer-con1-type</key>
 				<data>
@@ -340,28 +319,40 @@
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-con2-pipe</key>
+				<key>framebuffer-con2-index</key>
 				<data>
-				EgAAAA==
+				/////w==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
 				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
 				AQAAAA==
 				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAAAg==
+				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
-				AAAAgA==
+				AAAAwA==
 				</data>
 			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
 			<true/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
