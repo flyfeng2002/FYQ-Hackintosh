@@ -15,9 +15,9 @@
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
 				<key>FixHPET</key>
-				<true/>
+				<false/>
 				<key>FixIPIC</key>
-				<true/>
+				<false/>
 				<key>FixRTC</key>
 				<true/>
 				<key>FixTMR</key>
@@ -254,8 +254,8 @@
 	<dict>
 		<key>Audio</key>
 		<dict>
-			<key>ResetHDA</key>
-			<false/>
+			<key>Inject</key>
+			<integer>0</integer>
 		</dict>
 		<key>Properties</key>
 		<dict>
@@ -291,37 +291,81 @@
 				<data>
 				mz4AAA==
 				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-busid</key>
+				<data>
+				AAAAAA==
+				</data>
 				<key>framebuffer-con0-enable</key>
 				<data>
 				AQAAAA==
+				</data>
+				<key>framebuffer-con0-flags</key>
+				<data>
+				mAAAAA==
+				</data>
+				<key>framebuffer-con0-index</key>
+				<data>
+				AAAAAA==
 				</data>
 				<key>framebuffer-con0-pipe</key>
 				<data>
 				EgAAAA==
 				</data>
+				<key>framebuffer-con0-type</key>
+				<data>
+				AgAAAA==
+				</data>
 				<key>framebuffer-con1-busid</key>
 				<data>
-				AQAAAA==
+				BAAAAA==
 				</data>
 				<key>framebuffer-con1-enable</key>
 				<data>
 				AQAAAA==
 				</data>
+				<key>framebuffer-con1-flags</key>
+				<data>
+				hwEAAA==
+				</data>
+				<key>framebuffer-con1-index</key>
+				<data>
+				AQAAAA==
+				</data>
 				<key>framebuffer-con1-pipe</key>
 				<data>
-				EwAAAA==
+				EgAAAA==
 				</data>
 				<key>framebuffer-con1-type</key>
 				<data>
 				AAgAAA==
 				</data>
+				<key>framebuffer-con2-busid</key>
+				<data>
+				BQAAAA==
+				</data>
 				<key>framebuffer-con2-enable</key>
 				<data>
 				AQAAAA==
 				</data>
+				<key>framebuffer-con2-flags</key>
+				<data>
+				hwEAAA==
+				</data>
 				<key>framebuffer-con2-index</key>
 				<data>
 				/////w==
+				</data>
+				<key>framebuffer-con2-pipe</key>
+				<data>
+				CgAAAA==
+				</data>
+				<key>framebuffer-con2-type</key>
+				<data>
+				AAQAAA==
 				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
@@ -331,17 +375,13 @@
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-portcount</key>
-				<data>
-				AgAAAA==
-				</data>
 				<key>framebuffer-stolenmem</key>
 				<data>
-				AAAAAg==
+				AACQAw==
 				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
-				AAAAwA==
+				AAAAgA==
 				</data>
 			</dict>
 		</dict>
@@ -350,7 +390,7 @@
 			<key>AddClockID</key>
 			<false/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
 			<false/>
 		</dict>
