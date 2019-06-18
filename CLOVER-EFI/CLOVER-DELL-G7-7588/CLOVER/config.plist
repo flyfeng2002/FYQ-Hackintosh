@@ -285,53 +285,29 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AACbPg==
+				CQClPg==
 				</data>
 				<key>device-id</key>
 				<data>
 				mz4AAA==
 				</data>
-				<key>enable-hdmi20</key>
+				<key>disable-external-gpu</key>
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-con0-busid</key>
+				<key>enable-hdmi20</key>
 				<data>
-				AAAAAA==
+				AQAAAA==
 				</data>
 				<key>framebuffer-con0-enable</key>
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-con0-flags</key>
-				<data>
-				mAAAAA==
-				</data>
-				<key>framebuffer-con0-index</key>
-				<data>
-				AAAAAA==
-				</data>
 				<key>framebuffer-con0-pipe</key>
 				<data>
 				EgAAAA==
 				</data>
-				<key>framebuffer-con0-type</key>
-				<data>
-				AgAAAA==
-				</data>
-				<key>framebuffer-con1-busid</key>
-				<data>
-				BAAAAA==
-				</data>
 				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
-				<key>framebuffer-con1-flags</key>
-				<data>
-				hwEAAA==
-				</data>
-				<key>framebuffer-con1-index</key>
 				<data>
 				AQAAAA==
 				</data>
@@ -343,29 +319,13 @@
 				<data>
 				AAgAAA==
 				</data>
-				<key>framebuffer-con2-busid</key>
-				<data>
-				BQAAAA==
-				</data>
 				<key>framebuffer-con2-enable</key>
 				<data>
 				AQAAAA==
 				</data>
-				<key>framebuffer-con2-flags</key>
-				<data>
-				hwEAAA==
-				</data>
 				<key>framebuffer-con2-index</key>
 				<data>
 				/////w==
-				</data>
-				<key>framebuffer-con2-pipe</key>
-				<data>
-				CgAAAA==
-				</data>
-				<key>framebuffer-con2-type</key>
-				<data>
-				AAQAAA==
 				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
@@ -375,9 +335,13 @@
 				<data>
 				AQAAAA==
 				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
+				</data>
 				<key>framebuffer-stolenmem</key>
 				<data>
-				AACQAw==
+				AAAwAQ==
 				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
@@ -586,17 +550,17 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>09/28/2018</string>
+		<string>09/17/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP151.88Z.F000.B00.1809280842</string>
+		<string>MBP152.88Z.F000.B00.1809171524</string>
 		<key>Board-ID</key>
-		<string>Mac-937A206F2EE63C01</string>
+		<string>Mac-827FB448E656EC26</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02840902J9JP4F1F</string>
+		<string>C02847701J9JH4RUE</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -624,18 +588,18 @@
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro15,1</string>
+		<string>MacBookPro15,2</string>
 		<key>SerialNumber</key>
-		<string>C02XH0EXKGYG</string>
+		<string>C02XQ06TJHCD</string>
 		<key>SmUUID</key>
-		<string>74F87ABD-693C-4925-86FC-513F0A4872B0</string>
+		<string>CD3C5594-C154-467D-A52F-E98317765D34</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>F6E8D282-8B8E-52C3-A5FC-AA07E56DBA1E</string>
+		<string>2AB5929B-6463-5E51-830F-9D2A4112C1D1</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
