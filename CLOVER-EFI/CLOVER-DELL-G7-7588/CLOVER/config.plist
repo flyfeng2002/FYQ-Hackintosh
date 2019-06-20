@@ -240,7 +240,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>dart=0 nv_disable=1 -disablegfxfirmware keepsyms=1 abm_firstpolldelay=16000 brcmfx-driver=2 brcmfx-country=#a</string>
+		<string>dart=0 nv_disable=1 -disablegfxfirmware keepsyms=1 abm_firstpolldelay=16000 brcmfx-country=HK</string>
 		<key>DefaultVolume</key>
 		<string>MacOS</string>
 		<key>NeverHibernate</key>
@@ -252,32 +252,12 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<integer>0</integer>
-		</dict>
+		<key>LANInjection</key>
+		<false/>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1d,0x6)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>WLAN</string>
-				<key>compatible</key>
-				<string>pci14e4,43a3</string>
-				<key>device_type</key>
-				<string>Airport Extreme</string>
-				<key>model</key>
-				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
-				<key>name</key>
-				<string>Airport</string>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
-				<key>device-id</key>
-				<data>
-				cKEAAA==
-				</data>
 				<key>layout-id</key>
 				<integer>56</integer>
 			</dict>
@@ -550,17 +530,17 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>09/17/2018</string>
+		<string>09/28/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP152.88Z.F000.B00.1809171524</string>
+		<string>MBP151.88Z.F000.B00.1809280842</string>
 		<key>Board-ID</key>
-		<string>Mac-827FB448E656EC26</string>
+		<string>Mac-937A206F2EE63C01</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02847701J9JH4RUE</string>
+		<string>C02847902GUJP4F1F</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -588,11 +568,11 @@
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro15,2</string>
+		<string>MacBookPro15,1</string>
 		<key>SerialNumber</key>
-		<string>C02XQ06TJHCD</string>
+		<string>C02XQZZ4KGYG</string>
 		<key>SmUUID</key>
-		<string>CD3C5594-C154-467D-A52F-E98317765D34</string>
+		<string>E8175EA6-EF36-423D-9AFC-856AB7630CCE</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
@@ -602,8 +582,6 @@
 		<string>2AB5929B-6463-5E51-830F-9D2A4112C1D1</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
-		<key>InjectSystemID</key>
-		<true/>
 	</dict>
 </dict>
 </plist>
