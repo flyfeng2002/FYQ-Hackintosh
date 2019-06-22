@@ -103,7 +103,7 @@
 				<key>Comment</key>
 				<string>Drop MATS</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
@@ -117,7 +117,7 @@
 				<key>Comment</key>
 				<string>Drop DMAR</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
@@ -557,6 +557,11 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
+			<dict>
+				<key>layout-id</key>
+				<integer>56</integer>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -566,6 +571,10 @@
 				<key>device-id</key>
 				<data>
 				mz4AAA==
+				</data>
+				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
 				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
@@ -577,11 +586,11 @@
 				</data>
 				<key>framebuffer-stolenmem</key>
 				<data>
-				AAAAAg==
+				AAAwAQ==
 				</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>
-				AAAAwA==
+				AAAAgA==
 				</data>
 			</dict>
 		</dict>
@@ -639,13 +648,9 @@
 			<dict>
 				<key>BundlePath</key>
 				<string>USBPorts.kext</string>
-				<key>Comment</key>
-				<string></string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string></string>
-				<key>MatchKernel</key>
 				<string></string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
@@ -803,20 +808,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/HoRNDIS</string>
-				<key>MatchKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>NoTouchID.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/NoTouchID</string>
 				<key>MatchKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -1045,7 +1036,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>alcid=56 -v keepsyms=1 -disablegfxfirmware  brcmfx-country=HK</string>
+				<string>-v keepsyms=1 -disablegfxfirmware  brcmfx-country=HK</string>
 				<key>csr-active-config</key>
 				<data>
 				Zw==
