@@ -11,6 +11,12 @@ SMBIOS MacBookPro15,1 (15-inch, 2018
 
 
 
+
+# DVMT 及 CFG修改参数：
+1. setup_var 0x5BD 0x1
+2. setup_var 0x8D2 0x2
+3. setup_var 0x8D3 0x3
+
 # CLOVER:
 
 ## 正常工作的功能
