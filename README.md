@@ -4,7 +4,7 @@
 处理器  Intel Core i5-8400 @ 2.81GHz 六核  
 内存 24GB 2667 MHz DDR4  
 硬盘  WD SSD 1TGB PCIE NVME  
-显卡 Intel UHD Graphics 630 3072 MB (platform-id:0x3e9b0000)  
+显卡 Intel UHD Graphics 630 (platform-id:0x3e9b0000)  
 网卡 Intel AC9560更换为博通1820A  
 声卡 ALC256(layout-id:56)  
 SMBIOS MacBookPro15,1 (15-inch, 2018  
