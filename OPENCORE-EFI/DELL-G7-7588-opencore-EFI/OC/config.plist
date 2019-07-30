@@ -204,7 +204,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>
 				SERBUw==
@@ -568,6 +568,8 @@
 				<data>
 				AACbPg==
 				</data>
+				<key>AAPL,slot-name</key>
+				<string>PCI-Express</string>
 				<key>device-id</key>
 				<data>
 				mz4AAA==
@@ -576,6 +578,34 @@
 				<data>
 				AQAAAA==
 				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con0-pipe</key>
+				<data>
+				EgAAAA==
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-index</key>
+				<data>
+				/////w==
+				</data>
 				<key>framebuffer-fbmem</key>
 				<data>
 				AACQAA==
@@ -583,6 +613,10 @@
 				<key>framebuffer-patch-enable</key>
 				<data>
 				AQAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
 				</data>
 				<key>framebuffer-stolenmem</key>
 				<data>
@@ -757,20 +791,6 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>FakePCIID.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/FakePCIID</string>
-				<key>MatchKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
 				<string>VoodooPS2Controller.kext</string>
 				<key>Enabled</key>
 				<true/>
@@ -822,6 +842,20 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IOElectrify</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>NoTouchID.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/NoTouchID</string>
 				<key>MatchKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -937,7 +971,7 @@
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
-			<false/>
+			<true/>
 			<key>AppleXcpmCfgLock</key>
 			<true/>
 			<key>AppleXcpmExtraMsrs</key>
@@ -947,15 +981,15 @@
 			<key>DisableIoMapper</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
-			<false/>
+			<true/>
 			<key>LapicKernelPanic</key>
-			<false/>
+			<true/>
 			<key>PanicNoKextDump</key>
 			<false/>
 			<key>ThirdPartyTrim</key>
-			<true/>
+			<false/>
 			<key>XhciPortLimit</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>Misc</key>
@@ -1036,7 +1070,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 -disablegfxfirmware  brcmfx-country=HK</string>
+				<string>keepsyms=1 brcmfx-country=HK nv_disable=1</string>
 				<key>csr-active-config</key>
 				<data>
 				Zw==
@@ -1226,7 +1260,7 @@
 			<key>ProvideConsoleControl</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
-			<true/>
+			<false/>
 			<key>ReleaseUsbOwnership</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
