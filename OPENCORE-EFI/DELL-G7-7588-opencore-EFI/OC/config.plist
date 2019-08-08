@@ -975,7 +975,7 @@
 			<key>AppleXcpmCfgLock</key>
 			<true/>
 			<key>AppleXcpmExtraMsrs</key>
-			<false/>
+			<true/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
@@ -1080,13 +1080,6 @@
 				cnUtUlU6MjUy
 				</data>
 			</dict>
-		</dict>
-		<key>Block</key>
-		<dict>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array>
-				<string>boot-args</string>
-			</array>
 		</dict>
 		<key>LegacyEnable</key>
 		<false/>
@@ -1234,7 +1227,6 @@
 		<key>Drivers</key>
 		<array>
 			<string>ApfsDriverLoader.efi</string>
-			<string>VirtualSmc.efi</string>
 			<string>AptioMemoryFix.efi</string>
 			<string>HFSPlus.efi</string>
 		</array>
