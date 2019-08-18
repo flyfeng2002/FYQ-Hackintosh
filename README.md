@@ -1,3 +1,12 @@
+请根据需要自行选择
+
+#github地址：
+https://github.com/flyfeng2002/FYQ-Hackintosh
+
+#码云地址：
+https://gitee.com/flyfeng2002/FYQ-Hackintosh
+
+
 # 笔记本配置  
 电脑型号 DELL-G7-7588  
 操作系统 macOS Mojave 10.14.5  
