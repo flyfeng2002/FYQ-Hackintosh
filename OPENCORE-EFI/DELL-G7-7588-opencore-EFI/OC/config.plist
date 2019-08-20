@@ -12,31 +12,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-ALC256.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-BRT6.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fix 12</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-CPUPM.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fix 12</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-Disable-DGPU.aml</string>
+				<string>DSDT.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -44,39 +20,7 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-PNLF.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fix 12</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PTSWAK.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fix 12</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-UPRW.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fix 12</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-XOSI.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Fix 12</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>RTCfix.aml</string>
+				<string>SSDT-G7.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -93,6 +37,22 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-USBX.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fix 12</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-CPUPM.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Fix 12</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-PNLF.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -138,6 +98,32 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>Rename XHCI to XHC (USB)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				WEhDSQ==
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Replace</key>
+				<data>
+				WEhDXw==
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				RFNEVA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>change HDAS to HDEF</string>
 				<key>Count</key>
 				<integer>0</integer>
@@ -152,188 +138,6 @@
 				<key>Replace</key>
 				<data>
 				SERFRg==
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Rename BRT6 to BRTX, use with SSDT-BRT6.aml, SSDT-PNLF.aml, AppleBacklightInjector.kext, and VoodooPS2Controller.kext to fix brightness keys</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				FCBCUlQ2Ag==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Replace</key>
-				<data>
-				FCBCUlRYAg==
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Rename method UPRW to XPRW and use with SSDT-UPRW.aml to fix USB "instant wake" on sleep</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				FBJVUFJXAHA=
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Replace</key>
-				<data>
-				FBJYUFJXAHA=
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Rename method GPRW to YPRW and use with SSDT-UPRW.aml to fix USB "instant wake" on sleep</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				FEAGR1BSVwI=
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Replace</key>
-				<data>
-				FEAGWVBSVwI=
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Rename method _PTS to ZPTS and use with SSDT-PTSWAK.aml to fix dGPU power sapping</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				FEkEX1BUUwE=
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Replace</key>
-				<data>
-				FEkEWlBUUwE=
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Rename method _WAK to ZWAK and use with SSDT-PTSWAK.aml to fix dGPU power sapping</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				FDlfV0FLAQ==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Replace</key>
-				<data>
-				FDlaV0FLAQ==
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Change ECDV to EC (so Mac OS knows about the Embedded Controller)</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				RUNEVg==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Replace</key>
-				<data>
-				RUNfXw==
-				</data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>
-				T1NJRA==
-				</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Replace</key>
-				<data>
-				WFNJRA==
 				</data>
 				<key>Skip</key>
 				<integer>0</integer>
@@ -398,20 +202,20 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Change _OSI to XOSI</string>
+				<string>Rename GFX0 to IGPU (to avoid igpu power sapping)</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
 				<data>
-				X09TSQ==
+				R0ZYMA==
 				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Replace</key>
 				<data>
-				WE9TSQ==
+				SUdQVQ==
 				</data>
 				<key>Skip</key>
 				<integer>0</integer>
@@ -464,6 +268,32 @@
 				<key>Replace</key>
 				<data>
 				RUgwMg==
+				</data>
+				<key>Skip</key>
+				<integer>0</integer>
+				<key>TableLength</key>
+				<integer>0</integer>
+				<key>TableSignature</key>
+				<data>
+				RFNEVA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change SAT0 to SATA (better sata compatibility)</string>
+				<key>Count</key>
+				<integer>0</integer>
+				<key>Enabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				U0FUMA==
+				</data>
+				<key>Limit</key>
+				<integer>0</integer>
+				<key>Replace</key>
+				<data>
+				U0FUQQ==
 				</data>
 				<key>Skip</key>
 				<integer>0</integer>
@@ -609,7 +439,7 @@
 				<key>device_type</key>
 				<string>Audio device</string>
 				<key>layout-id</key>
-				<integer>56</integer>
+				<integer>13</integer>
 				<key>model</key>
 				<string>Cannon Lake PCH cAVS</string>
 			</dict>
@@ -631,17 +461,20 @@
 				</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAgA==
+				</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 630</string>
 			</dict>
 		</dict>
 		<key>Block</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<array>
-				<string>MaximumBootBeepVolume</string>
-			</array>
-		</dict>
+		<dict/>
 	</dict>
 	<key>Kernel</key>
 	<dict>
@@ -878,6 +711,20 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/NoTouchID</string>
+				<key>MatchKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>HibernationFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/HibernationFixup</string>
 				<key>MatchKernel</key>
 				<string></string>
 				<key>PlistPath</key>
@@ -1122,7 +969,7 @@
 			<key>RequireVault</key>
 			<false/>
 			<key>ScanPolicy</key>
-			<integer>16713475</integer>
+			<integer>3737347</integer>
 		</dict>
 		<key>Tools</key>
 		<array>
@@ -1152,13 +999,6 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-			<dict>
-				<key>UIScale</key>
-				<data>
-				AQ==
-				</data>
-			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
@@ -1166,10 +1006,6 @@
 				<key>csr-active-config</key>
 				<data>
 				Zw==
-				</data>
-				<key>prev-lang:kbd</key>
-				<data>
-				cnUtUlU6MjUy
 				</data>
 			</dict>
 		</dict>
@@ -1210,18 +1046,18 @@
 		<key>DataHub</key>
 		<dict>
 			<key>BoardProduct</key>
-			<string>Mac-937A206F2EE63C01</string>
+			<string>Mac-827FB448E656EC26</string>
 			<key>SystemProductName</key>
-			<string>MacBookPro15,1</string>
+			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XL08JKGYG</string>
+			<string>C02WD0Y2JHCD</string>
 			<key>SystemUUID</key>
-			<string>E26907ED-BB82-40E1-9135-DD873BF3D37D</string>
+			<string>237A03BB-6A95-4781-986D-9DF26D71CE56</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02843100QXJP4FCB</string>
+			<string>C02830501J9JH4R1H</string>
 			<key>ROM</key>
 			<data>
 			ESIzAAAA
@@ -1229,11 +1065,11 @@
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>MacBookPro15,1</string>
+			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XL08JKGYG</string>
+			<string>C02WD0Y2JHCD</string>
 			<key>SystemUUID</key>
-			<string>E26907ED-BB82-40E1-9135-DD873BF3D37D</string>
+			<string>237A03BB-6A95-4781-986D-9DF26D71CE56</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -1242,7 +1078,7 @@
 			<key>FirmwareFeaturesMask</key>
 			<string>3FFF1FFF 00000000</string>
 			<key>MLB</key>
-			<string>C02843100QXJP4FCB</string>
+			<string>C02830501J9JH4R1H</string>
 			<key>ROM</key>
 			<data>
 			ESIzAAAA
@@ -1251,21 +1087,21 @@
 		<key>SMBIOS</key>
 		<dict>
 			<key>BIOSReleaseDate</key>
-			<string>09/28/2018</string>
+			<string>04/22/2019</string>
 			<key>BIOSVendor</key>
-			<string>Apple Inc.</string>
+			<string></string>
 			<key>BIOSVersion</key>
-			<string>220.250.320.0.0</string>
+			<string>MBP152.88Z.F000.B00.1904222000</string>
 			<key>BoardAssetTag</key>
 			<string></string>
 			<key>BoardLocationInChassis</key>
 			<string>Part Component</string>
 			<key>BoardManufacturer</key>
-			<string>Apple Inc.</string>
+			<string></string>
 			<key>BoardProduct</key>
-			<string>Mac-937A206F2EE63C01</string>
+			<string>Mac-827FB448E656EC26</string>
 			<key>BoardSerialNumber</key>
-			<string>C02843100QXJP4FCB</string>
+			<string>C028101024NJH4R1H</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -1273,13 +1109,13 @@
 			<key>ChassisAssetTag</key>
 			<string>MacBook-Aluminum</string>
 			<key>ChassisManufacturer</key>
-			<string>Apple Inc.</string>
+			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02XL08JKGYG</string>
+			<string>C02X4UZ2JHCD</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
-			<string>Mac-937A206F2EE63C01</string>
+			<string>Mac-827FB448E656EC26</string>
 			<key>FirmwareFeatures</key>
 			<string>37E10FFC 00000000</string>
 			<key>FirmwareFeaturesMask</key>
@@ -1289,19 +1125,19 @@
 			<key>PlatformFeature</key>
 			<integer>26</integer>
 			<key>ProcessorType</key>
-			<string></string>
+			<integer>0</integer>
 			<key>SystemFamily</key>
 			<string>MacBook Pro</string>
 			<key>SystemManufacturer</key>
-			<string>Apple Inc.</string>
+			<string></string>
 			<key>SystemProductName</key>
-			<string>MacBookPro15,1</string>
+			<string>MacBookPro15,2</string>
 			<key>SystemSKUNumber</key>
-			<string>Mac-937A206F2EE63C01</string>
+			<string>Mac-827FB448E656EC26</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XL08JKGYG</string>
+			<string>C02WD0Y2JHCD</string>
 			<key>SystemUUID</key>
-			<string>E26907ED-BB82-40E1-9135-DD873BF3D37D</string>
+			<string>237A03BB-6A95-4781-986D-9DF26D71CE56</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -1350,7 +1186,7 @@
 			<key>ReleaseUsbOwnership</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
-			<false/>
+			<true/>
 			<key>SanitiseClearScreen</key>
 			<true/>
 		</dict>
