@@ -1002,7 +1002,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>keepsyms=1 brcmfx-country=HK nv_disable=1</string>
+				<string>-igfxnohdmi  -disablegfxfirmware brcmfx-driver=1 brcmfx-country=#a </string>
 				<key>csr-active-config</key>
 				<data>
 				Zw==
@@ -1163,7 +1163,7 @@
 		<key>Protocols</key>
 		<dict>
 			<key>AppleBootPolicy</key>
-			<true/>
+			<false/>
 			<key>ConsoleControl</key>
 			<false/>
 			<key>DataHub</key>
@@ -1186,7 +1186,7 @@
 			<key>ReleaseUsbOwnership</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
-			<true/>
+			<false/>
 			<key>SanitiseClearScreen</key>
 			<true/>
 		</dict>
