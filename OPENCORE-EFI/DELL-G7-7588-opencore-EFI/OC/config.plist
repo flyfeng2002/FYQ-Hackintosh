@@ -108,6 +108,10 @@
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
 			<true/>
+			<key>DevirtualiseMmio</key>
+			<false/>
+			<key>DisableSingleUser</key>
+			<false/>
 			<key>DisableVariableWrite</key>
 			<false/>
 			<key>DiscardHibernateMap</key>
@@ -638,7 +642,7 @@
 			<key>PanicNoKextDump</key>
 			<false/>
 			<key>ThirdPartyTrim</key>
-			<false/>
+			<true/>
 			<key>XhciPortLimit</key>
 			<false/>
 		</dict>
@@ -659,6 +663,8 @@
 			<string>AUTO</string>
 			<key>HideSelf</key>
 			<true/>
+			<key>PollAppleHotKeys</key>
+			<false/>
 			<key>Resolution</key>
 			<string>1920x1080@32</string>
 			<key>ShowPicker</key>
@@ -687,14 +693,15 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Name</key>
-				<string>other os</string>
+				<string>CustomOS</string>
 				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1d,0x0)/Pci(0x0,0x0)/?/HD(1,GPT,7DE58E3C-F587-4250-A897-FD00B97C6D2A)/\EFI\Microsoft\Boot\bootmgfw.efi
-</string>
+				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
 			</dict>
 		</array>
 		<key>Security</key>
 		<dict>
+			<key>AllowNvramReset</key>
+			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>2</integer>
 			<key>HaltLevel</key>
@@ -900,16 +907,32 @@
 		<dict>
 			<key>AppleBootPolicy</key>
 			<true/>
+			<key>AppleEvent</key>
+			<false/>
+			<key>AppleImageConversion</key>
+			<false/>
+			<key>AppleKeyMap</key>
+			<false/>
+			<key>AppleUserInterfaceTheme</key>
+			<false/>
 			<key>ConsoleControl</key>
 			<false/>
 			<key>DataHub</key>
 			<false/>
 			<key>DeviceProperties</key>
 			<false/>
+			<key>FirmwareVolume</key>
+			<false/>
+			<key>HashServices</key>
+			<false/>
+			<key>UnicodeCollation</key>
+			<false/>
 		</dict>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidHighAlloc</key>
+			<false/>
+			<key>ClearScreenOnModeSwitch</key>
 			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
@@ -920,6 +943,8 @@
 			<key>ProvideConsoleGop</key>
 			<true/>
 			<key>ReleaseUsbOwnership</key>
+			<false/>
+			<key>ReplaceTabWithSpace</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<false/>
