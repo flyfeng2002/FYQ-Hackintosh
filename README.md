@@ -67,7 +67,33 @@ SMBIOS MacBookPro15,1 (15-inch, 2018
 1. HDMI以及音频无法正常工作，无输出； 
 
 
-
-
 参考：
 https://github.com/Juan-VC/macOS-Mojave-on-Dell-G7-7588
+
+
+# 台式机配置  
+
+系统：10.13.6
+处理器  Intel Core i5-4590
+内存 16GB 1600 MHz DDR3  
+硬盘  sandisk sata 固态 120g  
+显卡 华硕 1060g  
+网卡 rl8111  
+声卡 ALC887(layout-id:5)  
+SMBIOS imac15.1 
+
+
+# OPENCORE:
+
+## 正常工作的功能
+1. CPU 睿频变频正常
+2. 显卡 ASUS 1060 web drive 3G正常驱动，如用其他卡请把nvda_drv项删除。
+3. USB3.0 正常 (USBPorts)
+4. 声卡 layout-id 为 5
+5. 有线网卡正常
+6. 睡眠唤醒正常
+
+
+## 存在的问题
+
+1. HDMI音频未测试； 
