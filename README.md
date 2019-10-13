@@ -26,6 +26,14 @@ SMBIOS MacBookPro15,1 (15-inch, 2018
 2. setup_var 0x8D2 0x2
 3. setup_var 0x8D3 0x3
 
+# 插入耳机没声音得解决方法：
+进入ALCPlugFix目录，运行install双击自动安装.command
+10.15下需要先解除系统目录权限：sudo mount -uw / &&  killall Finder
+
+# 从第三方来源安装程序：
+
+sudo spctl --master-disable
+
 # CLOVER:
 
 ## 正常工作的功能
